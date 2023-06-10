@@ -23,6 +23,11 @@ npm install -g yarn@1.22.19
 ## Create
 You need to create a .env.local in your root directory based on .env
 ## Run
+before your first run, install all the packages
+```sh
+yarn install
+```
+now you can start coding
 ```sh
 yarn dev
 ```
