@@ -2,11 +2,11 @@
 ### node v18.16.0
 check if you have curl in your computer
 ```sh
-    curl --version
+curl --version
 ```
 if not:
 ```sh
-    sudo apt install curl
+sudo apt install curl
 ```
 Install node using curl
 ```sh
