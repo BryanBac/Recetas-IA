@@ -11,6 +11,7 @@ sudo apt install curl
 Install node using curl
 ```sh
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
+source ~/.profile
 nvm install 18.16.0
 nvm use 18.16.0
 node --version
