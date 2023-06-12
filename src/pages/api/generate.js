@@ -44,5 +44,5 @@ export default async function (req, res) {
 }
 
 function generatePrompt(comida, monto) {
-  return `Dame 1 receta real de comida ${comida}, con su preparación, que pueda hacer por menos de ${monto} e incluye precios aproximados de los ingredientes`;
+  return `Dame 1 receta real de comida ${comida}, con su preparación, que pueda hacer por menos de Q.${monto} e incluye precios aproximados de los ingredientes`;
 }

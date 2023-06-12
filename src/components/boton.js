@@ -5,8 +5,7 @@ function Boton(props) {
     return (
         <div className="contenedor-botones">
             <button className='boton' onClick={()=>{
-                setValue(value)
-                console.log(value)
+                setValue(texto)
             }}><span>
                 {texto}
             </span></button>
