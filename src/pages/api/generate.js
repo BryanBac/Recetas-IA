@@ -16,12 +16,13 @@ export default async function (req, res) {
   }
 
   const comida = req.body.comida || '';
+  const monto = req.body.monto || '';
   console.log("dentro", comida);
 
   try {
     const completion = await openai.createCompletion({
       model: "text-davinci-003",
-      prompt: generatePrompt(comida),
+      prompt: generatePrompt(comida, monto),
       temperature: 0.6,
       max_tokens: 1000,
     });
@@ -42,6 +43,6 @@ export default async function (req, res) {
   }
 }
 
-function generatePrompt(comida) {
-  return `Dame 1 receta real de comida ${comida}, con su preparación, que pueda hacer por menos de Q.100.00 e incluye precios aproximados de los ingredientes`;
+function generatePrompt(comida, monto) {
+  return `Dame 1 receta real de comida ${comida}, con su preparación, que pueda hacer por menos de ${monto} e incluye precios aproximados de los ingredientes`;
 }
