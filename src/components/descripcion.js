@@ -2,9 +2,10 @@ import React from 'react';
 
 function Descripcion(props) {
     return (
-        <div classname='contenedor-descripcion'>
-            <p className='descripcion-parrafo1'>{props.descripcion1}</p>
-            <p className='descripcion-parrafo2'>{props.descripcion2}</p>
+        <div>
+            <p>{props.descripcion1}</p>
+            <p>{props.descripcion2}</p>
+            <p>{props.descripcion3}</p>
         </div>
     );
 }
