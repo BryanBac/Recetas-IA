@@ -58,6 +58,27 @@ button {
   gap:40px;
 }
 
+.boton-presupuesto {
+  border: none;
+  background: #C8E6C9;
+  color: #666666;
+  height: 40px;
+  width: 150px;
+  margin-left: 20px;
+  margin-top: -5px;
+  margin-bottom: 20px;
+  border-radius: 50px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: .3s ease all;
+}
+
+.boton-presupuesto:hover {
+  background: #b39ddb;
+  transition: .8s;
+}
+
+
 .contenedor-header {
   width: 100%;
   height: auto;

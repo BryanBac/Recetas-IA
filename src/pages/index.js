@@ -69,6 +69,7 @@ export default function Home() {
           <form onSubmit={ev => { ev.preventDefault; console.log(ev.target.search.value) }}>
             <input className='formPresupuesto' type='sumbit' name='presupuesto' autoComplete='off' onChange={(event) => setMonto(event.target.value)}></input>
           </form>
+          <button className="boton-presupuesto" onClick={subir}>Subir</button>
         </div>
 
         <div className='contenedor-btn-respuesta'>
@@ -91,7 +92,6 @@ export default function Home() {
         <div className='contenedor-footer'>
           <img src='footer.png' />
         </div>
-        <button onClick={subir}>Subir</button>
       </main>
     </div>
   );
